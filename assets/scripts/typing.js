@@ -85,5 +85,20 @@ codeInput.addEventListener("keydown", (e) => {
 
     // Move the cursor position after the inserted spaces
     codeInput.selectionStart = codeInput.selectionEnd = start + 2;
+  } else if (e.key === "(") {
+    e.preventDefault();
+
+    // Get the current cursor position
+    const start = codeInput.selectionStart;
+    const end = codeInput.selectionEnd;
+
+    // Insert curly braces at the cursor position
+    codeInput.value =
+      codeInput.value.substring(0, start) +
+      "()" +
+      codeInput.value.substring(end);
+
+    // Move the cursor position after the inserted curly braces
+    codeInput.selectionStart = codeInput.selectionEnd = start + 1;
   }
 });
