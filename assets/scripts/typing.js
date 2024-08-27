@@ -68,7 +68,7 @@ codeInput.addEventListener("input", () => {
 
   if (userInput === codeSnippet) {
     feedback.textContent = "Correct!";
-    feedback.style.color = "limegreen";
+    feedback.style.color = "green";
   } else if (codeSnippet.startsWith(userInput)) {
     feedback.textContent = "Keep typing...";
     feedback.style.color = "orange";
