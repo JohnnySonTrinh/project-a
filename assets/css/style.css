@@ -4,7 +4,6 @@ body {
   color: #dcdcdc;
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100vh;
   margin: 0;
 }
@@ -16,6 +15,12 @@ main {
 h1 {
   color: #ffffff;
   text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
 #code-container {
