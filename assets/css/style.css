@@ -1,3 +1,4 @@
+/* Base styles for the application */
 body {
   font-family: "Roboto Mono", monospace;
   background-color: #1e1e1e;
@@ -17,12 +18,14 @@ h1 {
   text-align: center;
 }
 
+/* Style the container */
 .container {
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
 
+/* Style the code container */
 #code-container {
   background-color: #2d2d2d;
   padding: 20px;
@@ -30,17 +33,20 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* Style the code display */
 #code-display {
   white-space: pre-wrap;
   font-size: 1.2rem;
   color: #9cdcfe;
 }
 
+/* Style the input container */
 #input-container {
   margin-bottom: 20px;
   text-decoration: none;
 }
 
+/* Style the text area for user input */
 #code-input {
   width: 100%;
   font-family: "Roboto Mono", monospace;
@@ -53,6 +59,7 @@ h1 {
   text-decoration: none;
 }
 
+/* Feedback message styling */
 #feedback {
   text-align: center;
   font-size: 2rem;
