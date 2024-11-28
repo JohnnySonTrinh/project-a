@@ -15,6 +15,7 @@ const codeSnippets = [
   return () => n++;
 };
   `.trim(),
+
   `
   const expect = function (val) {
   return {
@@ -35,6 +36,7 @@ const codeSnippets = [
   };
 };
   `.trim(),
+
   `
   const createCounter = function(init) {
   let present = init;
@@ -43,6 +45,14 @@ const codeSnippets = [
       decrement:() => --present,
       reset:() => present = init,
   }
+};
+`.trim(),
+
+  `
+  const createMultiplier = function(multiplier) {
+  return function(value) {
+    return value * multiplier;
+  };
 };
 `.trim(),
 ];
